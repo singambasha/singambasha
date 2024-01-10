@@ -1,0 +1,31 @@
+1 sudo yum install java-1.8.0-openjdk -y
+2 java -version
+
+3 wget http://dlcdn.apache.org/tomcat/tomcat-9/v9.0.75/bin/apache-
+tomcat-9.0.75.tar.gz
+
+4 ll
+5 tar -zxvf apache-tomcat-9.0.75.tar.gz
+6 ll
+7 cd apache-tomcat-9.0.75/
+8 ll
+9 cd webapps/
+10 ls
+11 cd manager/
+12 ll
+13 cd META-INF/
+14 ll
+15 vim context.xml
+Remove 2 lines like value and allow
+16 cd ../../../
+17 ll
+18 cd conf/
+19 ll
+20 vim tomcat-users.xml
+21 cd ..
+22 ll
+23 cd bin/
+24 ll
+
+25 ls
+26 ./startup.sh
